@@ -1,0 +1,7 @@
+/**********************
+* Spezielle CSS-Definitionen bei deaktiviertem JavaScript
+**********************/
+
+.nojshidden {
+  display:none;
+}

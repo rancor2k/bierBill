@@ -1,0 +1,38 @@
+/**********************
+* Standard CSS Einstellungen um Browser-Unterschiede abzufangen
+**********************/
+
+html,body {
+  height:100%;
+  margin:0px;
+  padding:0px;
+}
+
+img {
+  margin:0px;
+  padding:0px;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:12px 0px;
+  padding:0px;
+  font-weight:normal;
+}
+
+h1 { font-size:275%; }
+h2 { font-size:200%; }
+h3 { font-size:150%; }
+h4 { font-size:125%; }
+h5 { font-size:110%; }
+h6 { font-size:100%; }
+
+form {
+  margin:0px;
+  padding:0px;
+}
+
+p {
+  margin:12px 0px;
+  padding:0px;
+}

@@ -1,0 +1,121 @@
+/**********************
+* Design CSS für die Seite allgemein, Header, Footer, etc.
+**********************/
+
+/* Hintergrundfarbe */
+body {
+  background-color:#AABBCC;
+}
+
+/* Schrift-Stil */
+body, pre, table, tr, td {
+  font-family:"Trebuchet MS",Verdana,Arial,sans-serif;
+  color:#000000;
+  font-size:11pt;
+}
+
+/* Header */
+#header {
+  background-color:#F2F2F2;
+  background-position:560px center;
+  background-repeat:no-repeat;
+  padding:25px;
+
+  /* in Gecko oder Webkit Browsern runde Ecken */
+  -moz-border-radius-topleft:15px;
+  -webkit-border-top-left-radius:15px;
+  -moz-border-radius-topright:15px;
+  -webkit-border-top-right-radius:15px;
+}
+#header h1 {
+  margin:0px;
+}
+
+/* Link im Header */
+#header a {
+  color:#000000;
+  line-height:1.4em;
+}
+#header a:hover, #header a:focus {
+  color:#0066CC;
+  background-color:#AABBCC;
+  text-decoration:none;
+}
+
+/* Wrapper um die Seite */
+#main {
+  background-color:#F2F2F2;
+  background-repeat:repeat-y;
+  position:absolute;
+  width:700px;
+  margin:15px;
+  border: 1px solid black;
+
+  /* in Gecko oder Webkit Browsern runde Ecken */
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+}
+
+/* Wrapper um den Inhalt */
+#content {
+  background-color:#CCDDEE;
+  padding:0px 0px 0px 165px;
+  width:0px;
+}
+
+/* Die Inhalts-Box */
+#content_inner {
+  background-color:#CCDDEE;
+  margin:0px;
+  padding:10px 25px;
+  min-height:450px;
+  width:449px;
+  
+  /* in Gecko oder Webkit Browsern runde Ecken */
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius-bottomleft:0px;
+  -webkit-border-bottom-left-radius:0px;
+}
+
+/* Das linke Menü */
+#menu_left {
+  background-color:#F2F2F2;
+  width:130px;
+  float:left;
+  padding:10px 10px 10px 25px;
+  margin:0px;
+  
+  /* in Gecko oder Webkit Browsern runde Ecken */
+  -moz-border-radius-bottomright:15px;
+  -webkit-border-bottom-right-radius:15px;
+}
+
+/* Stil für die Menü-Liste */
+#menu_left h5 {
+  margin:0px;
+  list-style:none inside;
+}
+#menu_left ul li {
+  list-style:none inside;
+}
+#menu_left ul {
+  padding:0px;
+  padding-left:10px;
+  margin-top:3px;
+}
+
+
+/* Der Footer */
+#footer {
+  background-color:#F2F2F2;
+  background-repeat:no-repeat;
+  clear:both;
+  padding:10px 185px 10px 185px;
+  
+  /* in Gecko oder Webkit Browsern runde Ecken */
+  -moz-border-radius-bottomleft:15px;
+  -webkit-border-bottom-left-radius:15px;
+  -moz-border-radius-bottomright:15px;
+  -webkit-border-bottom-right-radius:15px;
+}

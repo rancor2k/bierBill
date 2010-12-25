@@ -1,0 +1,169 @@
+/**********************
+* Stellt häufig benötigte CSS-Styles zur Verfügung
+**********************/
+
+/* Text */
+.small {
+  font-size:8pt;
+}
+.old {
+  color:#808080;
+}
+.error_h {
+  color:#CC0000;
+  font-weight:bold;
+}
+
+/* Links */
+a {
+  color:#0066CC;
+  text-decoration:none;
+}
+a:hover, a:focus, a.small:hover, a.small:focus {
+  background-color:#FF9900;
+}
+a.img:hover, a.img:focus {
+  background-color:transparent;
+}
+/* Externe Links bekommen ein Zeichen vorangestellt */
+#content_inner a[href^="http:"]:before, #content_inner a[href^="https:"]:before {
+  content:"\00BB";
+}
+
+
+/* Text-Erscheinungsbild im Content-Block */
+#content_inner h2,h3 {
+  text-decoration:underline;
+}
+#content_inner p {
+  text-align:justify;
+}
+#content_inner li {
+  text-align:justify;
+}
+#content_inner img[align=right] {
+  padding:20px 0px 20px 20px;
+}
+#content_inner img[align=left] {
+  padding:20px 20px 20px 0px;
+}
+h4.timetable {
+  margin:0px;
+}
+h5.timetable {
+  margin-top:0px;
+}
+
+/* Stlye für Tabellen im Content-Block */
+table.contenttable {
+  width:100%;
+  border:2px dotted #000000;
+  border-collapse:collapse;
+}
+table.contenttable td, table.contenttable th {
+  padding:3px;
+  border:2px dotted #000000;
+  text-align:center;
+}
+table.contenttable th {
+  font-weight:bold;
+}
+
+/* Stlye für die Showtimes Tabelle */
+table.timetable th {
+  width:14%;
+}
+table.timetable td {
+  font-size:smaller;
+}
+table.booking th {
+  width:33%;
+}
+
+
+/* Verschiedenes */
+.pointer {
+    cursor:pointer;
+}
+
+
+/* Formulare */
+#content_inner fieldset {
+  border:none;
+  padding:0px;
+  margin:0px;
+}
+
+#content_inner fieldset input {
+  display:block;
+  width:50%;
+}
+#content_inner fieldset button {
+  background-color:#E0DFE3;
+  padding:3px;
+  outline:none;
+  border:1px solid #666666;
+  
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+}
+#content_inner fieldset button:before {
+  content:"\00BB  ";
+}
+#content_inner fieldset button:hover {
+  background-color:#F2F2F2;
+  -moz-box-shadow:0 0 6px #666666;
+  -webkit-box-shadow:0 0 6px #666666;
+}
+
+/* Style der Fehler-Meldung im Formular */
+#content_inner .error {
+  height:15px;
+  background-color:#DE5B5B;
+  border:2px solid #C24949;
+  font-size:11px;
+  padding:3px 10px;
+  margin-left:5px;
+  
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-box-shadow:0 0 6px #C24949;
+  -webkit-box-shadow:0 0 6px #C24949;
+}
+
+
+
+/* Ausrichtung */
+/* !important sorgt dafür, dass die Style vorgabe auch immer angewandt wird und nicht durch andere Styles überschrieben wird */
+.top {
+  vertical-align:top !important;
+}
+.middle {
+  vertical-align:middle !important;
+}
+.bottom {
+  vertical-align:bottom& !important;
+}
+
+.left {
+  text-align:left !important;
+}
+.center {
+  text-align:center !important;
+}
+.right {
+  text-align:right !important;
+}
+.justify{
+  text-align:justify !important;
+}
+
+.atleft {
+  float:left !important;
+}
+.atright {
+  float:right !important;
+}
+.atdefault {
+  float:none !important;
+}

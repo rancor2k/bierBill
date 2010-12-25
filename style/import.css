@@ -1,0 +1,9 @@
+/**********************
+* Importiert benötigte CSS-Files => HTML ist schlanker
+**********************/
+
+@import url("default.css");
+@import url("design.css");
+@import url("classes.css");
+@import url("range.css");
+@import url("screen.css");

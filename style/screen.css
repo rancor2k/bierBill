@@ -1,0 +1,81 @@
+/**********************
+* CSS-Definitionen für die Darstellung von Kino Sälen
+**********************/
+.screen_container {
+}
+
+/* Grund-Style für jedes Teil eines Kino Saals */
+.screen {
+  position:relative;
+  display:inline;
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin:2px;
+  padding:0px;
+  border:1px solid transparent;
+}
+
+/* Leinwand-Element */
+.screenelement {
+  width:34px;
+  height:18px;
+  margin:2px -5px !important;
+  border-top:3px solid #000000;
+}
+
+/* leerer Platz */
+.space {
+  background-color:transparent;
+}
+
+/* ein Sitz */
+.seat {
+  background-color:#008800;
+  border:1px solid black;
+  -moz-border-radius:3px;
+}
+
+/* ein Sitz in der Legende */
+.legend {
+  width:20px;
+  height:20px;
+}
+
+/* die Checkbox eines Sitzes */
+.seat input {
+  cursor:pointer;
+  padding:0px;
+  margin:0px;
+  margin-top:3px;
+}
+
+/* ein ausgewählter Sitz */
+.selectedseat {
+  background-color:#FF0000;
+}
+/* ein blockierter Sitz */
+.blocked {
+  background-color:#666666;
+}
+/* ein verkaufter Sitz */
+.sold {
+  background-color:#0000FF;
+}
+/* ein reservierter Sitz */
+.reservation {
+  background-color:#9999FF;
+}
+/* ein Rollstuhlplatz */
+.wheelchair {
+  background-color:#FFFF00;
+}
+
+/* Styles, wenn der Saal nicht zum Buchen angezeigt wird sondern nur um ihn anzuzeigen */
+.nobooking .seat {
+  cursor:default;
+}
+.nobooking .seat input {
+  display:none;
+  cursor:default;
+}
